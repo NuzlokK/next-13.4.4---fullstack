@@ -1,9 +1,10 @@
 import React from "react";
+import FooterView from "./Footer.view";
 
 type Props = {};
 
 const Footer = (props: Props) => {
-  return <div>footer</div>;
+  return <FooterView />;
 };
 
 export default Footer;

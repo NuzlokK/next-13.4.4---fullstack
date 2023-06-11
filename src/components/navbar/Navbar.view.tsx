@@ -7,6 +7,7 @@ import { INavBar } from "@/models/UI/navbar.model";
 import classes from "./Navbar.module.scss";
 import SectionContainer from "@/Containers/SectionContainer";
 import Image from "next/image";
+import Button from "../Button/Button";
 
 type Props = {
   links: INavBar[];
@@ -31,9 +32,7 @@ const NavbarView = (props: Props) => {
               </Link>
             </li>
           ))}
-          <button onClick={logout} className={classes["logoutBtn"]}>
-            Logout
-          </button>
+          <Button className={classes["button"]}>Logout</Button>
         </div>
       </div>
     </SectionContainer>

@@ -1,3 +1,4 @@
+import Button from "@/components/Button/Button";
 import SectionContainer from "@/Containers/SectionContainer";
 import Image from "next/image";
 import React from "react";
@@ -18,7 +19,9 @@ const HomeView = (props: Props) => {
             Turning your Idea into Reality. We bring together the teams from the
             global tech industry.
           </p>
-          <button className={classes["btn"]}>See Our Works</button>
+          <Button url="/portfolio" className={classes["button"]}>
+            See Our Works
+          </Button>
         </div>
         <div className={classes["homeImage"]}>
           <Image

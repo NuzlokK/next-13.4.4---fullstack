@@ -1,6 +1,5 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import HomeView from "@/view/pages/Home/home.view";
 
 export default function Home() {
-  return <div>Home</div>;
+  return <HomeView />;
 }

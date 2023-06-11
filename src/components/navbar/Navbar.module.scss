@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 18px;
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .navbarItem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .list {
+                list-style: none;
+                :hover {
+                    color: aqua;
+                }
+            }
+            .logoutBtn {
+                padding: 5px 7px;
+                color: white;
+                background-color: green;
+                border: none;
+                cursor: pointer;
+                border-radius: 3px;
+                font-family: "__Inter_0ec1f4", "__Inter_Fallback_0ec1f4";
+            }
+        }
+    }
+}

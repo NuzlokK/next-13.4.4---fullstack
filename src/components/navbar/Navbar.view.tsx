@@ -1,20 +1,30 @@
-import { INavBar } from "@/models/UI/navbar.model";
-import Link from "next/link";
+"use client";
+
 import React from "react";
+import Link from "next/link";
+
+import { INavBar } from "@/models/UI/navbar.model";
+import classes from "./Navbar.module.scss";
 
 type Props = {
   links: INavBar[];
 };
 
+const logout = () => {
+  console.log("logout");
+};
+
 const NavbarView = (props: Props) => {
   return (
-    <div>
+    <div className={classes["navbar"]}>
       {props.links.map((item: INavBar, index: number) => (
-        <li key={`link-${item.title}-${index}`}>
-          <Link href={item.url}>{item.title}</Link>
+        <li key={`link-${item.title}-${index}`} className={classes["list"]}>
+          <Link href={item.url} className={classes["item"]}>
+            {item.title}
+          </Link>
         </li>
       ))}
-      sup
+      <button onClick={logout}>Log</button>
     </div>
   );
 };

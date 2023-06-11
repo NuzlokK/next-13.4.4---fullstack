@@ -1,5 +1,7 @@
 import React from "react";
 
+import classes from "./about.module.scss";
+
 type Props = {};
 
 const AboutView = (props: Props) => {

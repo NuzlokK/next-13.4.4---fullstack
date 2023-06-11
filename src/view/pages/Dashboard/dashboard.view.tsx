@@ -1,9 +1,11 @@
 import React from "react";
 
+import classes from "./dashboard.module.scss";
+
 type Props = {};
 
-const aboutView = (props: Props) => {
-  return <div>aboutView</div>;
+const DashboardView = (props: Props) => {
+  return <div>DashboardView</div>;
 };
 
-export default aboutView;
+export default DashboardView;

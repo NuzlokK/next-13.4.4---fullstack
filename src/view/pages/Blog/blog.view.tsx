@@ -1,5 +1,7 @@
 import React from "react";
 
+import classes from "./blog.module.scss";
+
 type Props = {};
 
 const BlogView = (props: Props) => {

@@ -1,7 +1,10 @@
+"use client";
+
 import SectionContainer from "@/Containers/SectionContainer";
 import { IGallery } from "@/models/UI/portfolio.model";
 import Image from "next/image";
 import Link from "next/link";
+
 import React from "react";
 
 import classes from "./portfolio.module.scss";
@@ -14,7 +17,6 @@ const PortfolioView = (props: Props) => {
   return (
     <SectionContainer className={classes["container"]}>
       <div className={classes["portfolio"]}>
-        <h1 className={classes["title"]}>Our Works</h1>
         <h2 className={classes["subTitle"]}>Choose a gallery</h2>
         <div className={classes["gallery"]}>
           {props.gallery.map((item: IGallery, index: number) => (

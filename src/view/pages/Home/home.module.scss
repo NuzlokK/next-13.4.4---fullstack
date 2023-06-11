@@ -26,7 +26,6 @@
                 padding: 20px;
                 font-size: 17px;
                 border-radius: 6px;
-                font-family: "__Inter_0ec1f4", "__Inter_Fallback_0ec1f4";
             }
         }
         .homeImage {
@@ -35,7 +34,18 @@
             align-items: flex-end;
             width: 50%;
             .image {
+                object-fit: contain;
+                animation: move 2s infinite ease alternate;
             }
         }
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateY(-15px);
+    }
+    to {
+        transform: translateY(0px);
     }
 }

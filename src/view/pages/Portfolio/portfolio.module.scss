@@ -1,4 +1,43 @@
 .container {
     display: flex;
     align-items: center;
+    width: 100%;
+    .portfolio {
+        width: 100%;
+        .title {
+            padding-bottom: 13px;
+            font-size: 90px;
+            font-weight: 800;
+        }
+        .subTitle {
+            padding: 30px 0 20px 0;
+            font-size: 40px;
+            font-weight: 800;
+        }
+        .gallery {
+            display: flex;
+            gap: 20px;
+
+            .item {
+                width: 280px;
+                height: 400px;
+                border: 3px solid white;
+                position: relative;
+
+                .image {
+                    object-fit: cover;
+                }
+                .name {
+                    position: absolute;
+                    bottom: 20px;
+                    right: 17px;
+                    font-size: 35px;
+                    font-weight: 700;
+                }
+                :hover {
+                    color: green;
+                }
+            }
+        }
+    }
 }

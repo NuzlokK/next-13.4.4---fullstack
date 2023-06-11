@@ -19,7 +19,9 @@ const HomeView = (props: Props) => {
             Turning your Idea into Reality. We bring together the teams from the
             global tech industry.
           </p>
-          <Button className={classes["button"]}>See Our Works</Button>
+          <Button url="/portfolio" className={classes["button"]}>
+            See Our Works
+          </Button>
         </div>
         <div className={classes["homeImage"]}>
           <Image

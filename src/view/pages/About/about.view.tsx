@@ -13,16 +13,17 @@ const AboutView = (props: Props) => {
       <div className={classes["about"]}>
         <div className={classes["titleWithImage"]}>
           <Image
+            className={classes["aboutImg"]}
             src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt="s"
-            width={500}
-            height={200}
-            className={classes["aboutImg"]}
+            fill={true}
           />
-          <h1 className={classes["imgTitle"]}>Digital Storytellers</h1>
-          <h2 className={classes["imgDescription"]}>
-            Handcrafting award winning digital experiences
-          </h2>
+          <div className={classes["imageText"]}>
+            <h1 className={classes["imgTitle"]}>Digital Storytellers</h1>
+            <h2 className={classes["imgDescription"]}>
+              Handcrafting award winning digital experiences
+            </h2>
+          </div>
         </div>
         <div className={classes["info"]}>
           <div className={classes["block"]}>
@@ -57,7 +58,9 @@ const AboutView = (props: Props) => {
               <li>Dynamic Website</li>
               <li>Fast Mobile Apps</li>
             </ul>
-            <Button className={classes["button"]}>Click</Button>
+            <Button url="/contact" className={classes["button"]}>
+              Click
+            </Button>
           </div>
         </div>
       </div>

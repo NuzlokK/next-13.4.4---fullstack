@@ -1,3 +1,4 @@
+import SectionContainer from "@/Containers/SectionContainer";
 import React from "react";
 
 import classes from "./blog.module.scss";
@@ -5,7 +6,11 @@ import classes from "./blog.module.scss";
 type Props = {};
 
 const BlogView = (props: Props) => {
-  return <div>BlogView</div>;
+  return (
+    <SectionContainer className={classes["container"]}>
+      <div>HomeView</div>
+    </SectionContainer>
+  );
 };
 
 export default BlogView;

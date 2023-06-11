@@ -1,3 +1,4 @@
+import SectionContainer from "@/Containers/SectionContainer";
 import React from "react";
 
 import classes from "./contact.module.scss";
@@ -5,7 +6,11 @@ import classes from "./contact.module.scss";
 type Props = {};
 
 const ContactView = (props: Props) => {
-  return <div>ContactView</div>;
+  return (
+    <SectionContainer className={classes["container"]}>
+      <div>HomeView</div>
+    </SectionContainer>
+  );
 };
 
 export default ContactView;

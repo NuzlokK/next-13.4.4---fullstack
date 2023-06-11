@@ -2,7 +2,10 @@
 
 import React from "react";
 
+import SectionContainer from "@/Containers/SectionContainer";
+
 import { IFooter } from "@/models/UI/footer.model";
+import classes from "./Footer.module.scss";
 
 type Props = {
   data: IFooter[];
@@ -11,11 +14,13 @@ type Props = {
 const FooterView = (props: Props) => {
   console.log("sup");
   return (
-    <div>
-      {props.data.map((item: IFooter, index: number) => (
-        <p key={`item-footer-${index}`}>{item.copyright}</p>
-      ))}
-    </div>
+    <SectionContainer className={classes["container"]}>
+      <div className={classes["footer"]}>
+        {props.data.map((item: IFooter, index: number) => (
+          <p key={`item-footer-${index}`}>{item.copyright}</p>
+        ))}
+      </div>
+    </SectionContainer>
   );
 };
 

@@ -1,14 +1,19 @@
-.navbar {
+.container {
     display: flex;
     align-items: center;
-    gap: 20px;
-    justify-content: center;
-    padding: 15px 0;
     background-color: red;
-    .list {
-        list-style: none;
-        :hover {
-            color: aqua;
+    padding: 15px 0;
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+        .list {
+            list-style: none;
+            :hover {
+                color: aqua;
+            }
         }
     }
 }
